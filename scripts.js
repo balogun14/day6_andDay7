@@ -31,7 +31,7 @@ async function fetchWords() {
 async function main() {
   const word = await fetchWords();
   if (word !== null) {
-    console.log(`word appended: ${word[0].word}`);
+    // console.log(`word appended: ${word[0].word}`);
     selectedWord = word[0].word.toLowerCase();
     displayWord(selectedWord);
     window.addEventListener("keydown", (e) => {

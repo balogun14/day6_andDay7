@@ -8,11 +8,27 @@
     <title>Hangman</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
+  <script src="./scripts.js"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-LS2BMHJ7QD"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-LS2BMHJ7QD");
+  </script>
 
   <body>
     <div id="Loading">
-        <div class="spinner-border" role="status" id="loader"></div>
-    Loading..
+      <div class="spinner-border" role="status" id="loader"></div>
+      Loading..
     </div>
     <h1>Hangman</h1>
     <p>Find the hidden word -Enter a letter</p>
@@ -41,17 +57,14 @@
       <div id="hint">
         <button type="button" id="modal">Hint</button>
         <main id="modalBody">
-            <span class="close" id="close">
-                &times;
-            </span>
+          <span class="close" id="close"> &times; </span>
           <p class="h3"></p>
         </main>
-    </div>
+      </div>
       <div class="wrong-letters-container">
         <div id="wrong-letters"></div>
       </div>
       <div class="word" id="word"></div>
-      
     </div>
 
     <!-- container for final message -->
@@ -65,7 +78,5 @@
     <div class="notification" id="notification-container">
       <p>You have already entered this letter</p>
     </div>
-
   </body>
-  <script src="./scripts.js"></script>
 </html>
