@@ -211,4 +211,7 @@ h1 {
 
 input{
   opacity: 0;
+  outline: none;
+  margin-bottom: 89px;
+  background-color: transparent;
 }
