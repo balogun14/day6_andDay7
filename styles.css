@@ -224,7 +224,8 @@ input{
     overflow: hidden;
   }
   input{
-    margin-bottom: 15%;
+    opacity: 1;
+    margin-bottom: 1%;
   }
   .wrong-letters-container {
     position: absolute;
